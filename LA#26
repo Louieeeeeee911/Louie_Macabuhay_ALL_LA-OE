@@ -44,3 +44,15 @@ class Raphael(NinjaTurtles):
     @property  
     def alias(self):
         return self.__alias
+
+import turtles as tt 
+
+Leonardo = tt.Leonardo("Leonardo", "Red")
+Michelangelo = tt.Michelangelo("Michelangelo", "Blue")
+Donatello = tt.Donatello("Donatelo", "Green")
+Raphael = tt.Raphael("Raphael", "White")
+
+print(Leonardo.pagong)
+print(Michelangelo.pagong)
+print(Donatello.pagong)
+print(Raphael.pagong)
