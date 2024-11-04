@@ -1,0 +1,46 @@
+from abc import ABC, abstractmethod
+
+class NinjaTurtles(ABC):
+    def __init__(self, name):
+       self.name = name
+       
+    @property
+    @abstractmethod
+    def pagong(self):
+        print(f"{self.name} Turtle")
+    
+class Leonardo(NinjaTurtles):
+    def __init__(self, name, alias):
+        self.name = name
+        self.__alias = alias
+      
+    @property
+    def alias(self):
+        return self.__alias
+
+class Michelangelo(NinjaTurtles):
+    def __init__(self, name, alias):
+        self.name = name
+        self.__alias = alias
+        
+    @property  
+    def alias(self):
+        return self.__alias
+
+class Donatello(NinjaTurtles):
+    def __init__(self, name, alias):
+        self.name = name
+        self.__alias = alias
+        
+    @property  
+    def alias(self):
+        return self.__alias
+
+class Raphael(NinjaTurtles):
+    def __init__(self, name, alias):
+        self.name = name
+        self.__alias = alias
+        
+    @property  
+    def alias(self):
+        return self.__alias
